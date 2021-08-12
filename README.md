@@ -1,11 +1,11 @@
 # LoL-Winrate-Analysis
 Analyze the winrate of players as a function of division.
-# abstract
+# Abstract
 This program was made in an attempt to prove that players with high win rates are paired with players with  
 low win rates in order to balance out games. This hypothesis could be proven correct if a players team members  
 win rates decrease as a players personal win rate increases. The results show that a players team mates win rate  
 increase as their win rate increases, disproving the hypothesis.
-# technical details
+# Technical Details
 lol_wr_analysis.py crawls through players profile pages on op.gg and gathers information about their win rates, and their team mates win rates.  
 That information is saved as a dictionary in a pickle file. Those pickle files are read in by lol_wr_plots.py.  
 Plots are made of a players win rate vs. their team mates win rates. A line is plotted using linear regression to represent the average trend.
